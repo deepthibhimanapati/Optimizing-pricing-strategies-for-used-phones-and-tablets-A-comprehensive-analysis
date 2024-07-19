@@ -1,5 +1,6 @@
 # Optimizing-pricing-strategies-for-used-phones-and-tablets-A-comprehensive-analysis
 
+OPTIMIZING PRICING STRATEGIES FOR USED PHONES AND TABLETS: A COMPREHENSIVE ANALYSIS
 BACKGROUND:
 In the light of growing market for refurbished and used electronic devices, the issue at hand mainly revolves around developing a model that accurately predicts the normalized price of the electronic devices. However, there is absence of precise model which takes into consideration crucial factors like brand, usage history, and device specifications acts a crucial challenge. Developing such models can aid in making informed decisions and promote effective circulation of electronic devices.
 
@@ -10,15 +11,15 @@ The main aim is to build model that predicts normalized used price of the refurb
 
 DATA DESCRIPTION:
 The dataset was obtained from Kaggle. Dataset has a record size of 3454 rows and 15 columns. The key variables are - device_brand, os, screen_sizr, 4g, 5g, front_camera_mp, back_camera_mp, internal_memory, ram, battery, weight, release_year, days_used, normalized_new_price, normalized_used_price. The dataset obtained provides insights into customer behavior and demographics. Furthermore, the dataset enables exploratory data analysis to develop a precise model.
-
 METHODOLOGY:
-●	Data cleaning is the most important preprocessing step for ensuring reliable data being utilized for modeling. The missing values have been addressed through imputation via mean, median, or mode. 
-●	The outliers have not been removed as it is eliminating all the 5G compatible devices, which will affect the analysis of the data.
-●	Exploratory Data Analysis (EDA) is vital for understanding the distribution of variables and identify potential patterns. 
-●	The mean, standard deviation, minimum, maximum, and correlation were identified to uncover trends or patterns in the dataset.
-●	Through visualizations like box plots, bar graphs, scatter plots, and heat maps variable distributions were examined, and potential outliers were identified. These visualizations will aid in the detection of patterns influencing the pricing modeling strategy.
-●	Linear regression, multiple regression, and KNN model will be used and evaluated. For selecting the final model, complexity, interpretability, and predictive performance will be taken into consideration while choosing the best model. 
-●	The performance of the models will be evaluated through MSE, MSME coefficient. 
+•	Data cleaning is the most important preprocessing step for ensuring reliable data being utilized for modeling. The missing values have been addressed through imputation via mean, median, or mode. 
+•	The outliers have not been removed as it is eliminating all the 5G compatible devices, which will affect the analysis of the data.
+•	Exploratory Data Analysis (EDA) is vital for understanding the distribution of variables and identify potential patterns. 
+•	The mean, standard deviation, minimum, maximum, and correlation were identified to uncover trends or patterns in the dataset.
+•	Through visualizations like box plots, bar graphs, scatter plots, and heat maps variable distributions were examined, and potential outliers were identified. These visualizations will aid in the detection of patterns influencing the pricing modeling strategy.
+•	Linear regression, multiple regression, and KNN model will be used and evaluated. For selecting the final model, complexity, interpretability, and predictive performance will be taken into consideration while choosing the best model. 
+•	The performance of the models will be evaluated through MSE, MSME coefficient. 
+
 FINDINGS (through exploratory data analysis):
 •	The dataset comprises mobile phones with varying screen sizes (mean: 13.62 inches) and camera resolutions (rear: 9.48 MP, front: 6.09 MP), alongside diverse internal memory capacities (52.10), RAM (3.96), and battery capacities (mean: 3074.93 mAh). Phones weigh an average of 182.49 grams and were predominantly released between 2013 and 2020.
 •	It is observed that “other” brands manufacture a maximum number of phones, at 15.4% of the total share. The second highest share is owned by Samsung with 10.5%, followed by Huawei with 7.72%. 
@@ -48,3 +49,4 @@ CONCLUSION:
 •	Knowing the attributes that contribute to high/low selling price of refurbished devices will keep the seller informed about the choice of models that will boom in the market of sales of refurbished devices.
 •	Multiple regression model aids in determining the relationship between various attributes and the normalized new price. 
 •	KNN model has identified 21 nearest neighbors, showcasing the effectiveness of KNN in handling the dataset's complexities. It has demonstrated a high degree of accuracy in predicting the normalized used prices of devices, making it a reliable method for valuation in the used device market. By using these models, the businesses can avoid overpricing and underpricing, thus potentially maximizing profits, improve competitiveness, and optimize inventory management.
+
