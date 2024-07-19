@@ -2,12 +2,15 @@
 
 BACKGROUND:
 In the light of growing market for refurbished and used electronic devices, the issue at hand mainly revolves around developing a model that accurately predicts the normalized price of the electronic devices. However, there is absence of precise model which takes into consideration crucial factors like brand, usage history, and device specifications acts a crucial challenge. Developing such models can aid in making informed decisions and promote effective circulation of electronic devices.
+
 PROBLEM STATEMENT:
 The main aim is to build model that predicts normalized used price of the refurbished electronic devices. However, the main challenge is to harness data that encompasses device attributes to effectively gauge the value of such devices. The overarching goal is to furnish both the businesses with a reliable model for effective pricing of the devices. It fosters financial prudence, waste minimization in the electronics industry. The project aims to answer the following questions:
 1.	How do device attributes and usage history influence the pricing of used and refurbished electronic devices?
 2.	What factors influence customer purchase decisions and what pricing strategies can businesses employ to optimize customer retention and competitiveness in the used electronics market?
+
 DATA DESCRIPTION:
 The dataset was obtained from Kaggle. Dataset has a record size of 3454 rows and 15 columns. The key variables are - device_brand, os, screen_sizr, 4g, 5g, front_camera_mp, back_camera_mp, internal_memory, ram, battery, weight, release_year, days_used, normalized_new_price, normalized_used_price. The dataset obtained provides insights into customer behavior and demographics. Furthermore, the dataset enables exploratory data analysis to develop a precise model.
+
 METHODOLOGY:
 ●	Data cleaning is the most important preprocessing step for ensuring reliable data being utilized for modeling. The missing values have been addressed through imputation via mean, median, or mode. 
 ●	The outliers have not been removed as it is eliminating all the 5G compatible devices, which will affect the analysis of the data.
