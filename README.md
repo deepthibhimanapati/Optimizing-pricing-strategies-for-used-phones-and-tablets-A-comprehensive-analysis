@@ -30,10 +30,12 @@ FINDINGS (through exploratory data analysis):
 •	The scatter plot between the number of days a device was used and its normalized used price, indicates a negative correlation. The points are densely packed at lower 'days_used' values and spread out as 'days_used' increases. This indicates that there is more variability in the used price of devices that have been used for a longer period.
 •	In the heat map, dark red represents a high positive correlation, and dark blue represents a high negative correlation. Lighter colors indicate weaker correlations. It can be understood that larger screen sizes, battery capacity, and device weight are strongly correlated. There is a strong negative correlation between a device’s release year and days used. Additionally, camera quality shows a moderate positive impact on both new and used device prices.
 Results:
+
 Linear regression:
 •	Statistical Significance: The linear regression for Days Used Vs. Normalized Used price shows that the number of days a device is used has a statistically significant negative impact on its normalized used price (coefficient = -0.0008, p < 0.001), indicating that as devices are used longer, their value decreases, in line with depreciation expectations.
 •	Intercept Interpretation: The intercept value of 4.9055 suggests that a device not used at all (0 days) would have a normalized used price of approximately 4.9055 units, representing its initial value before any depreciation.
 •	The Adjusted R-squared value of 0.108 implies that the model explains about 10.8% of the variability in the normalized used price, indicating that other unaccounted factors also play significant roles in determining a device's used price.
+
 Multiple regression:
 •	Identifying that device valuation is influenced by several factors beyond just usage duration, multiple regression was considered by modeling the target variable as a function of several predictors, offering a more nuanced understanding of how various features impact the normalized used price.
 •	The RMSE of 0.2426 and the MAE of 0.1905 both reflect the model’s prediction accuracy, with lower values indicating better performance. 
@@ -41,10 +43,12 @@ Multiple regression:
 •	Brands like Realme and BlackBerry, and technology features like 4G capability, significantly increase a device’s resale value, demonstrating the importance of brand reputation and network technology in determining used device prices. 
 •	Higher RAM, better camera specifications, and the iOS operating system are associated with higher resale values, underscoring the value consumers place on device performance, photographic capabilities, and premium operating systems.
 •	Multiple regression analysis reveals a complex interplay of factors that influence the normalized used price of devices, highlighting the multifaceted nature of device valuation in the used market. Based on this, the businesses can manage inventory with the devices and features that are in demand. For e.g., they can maintain more stock of Realme devices.
+
 KNN:
 •	The range of accuracy scores from 85.6% to 89.7% indicates that the KNN model is highly effective at predicting the normalized used price. This high level of accuracy suggests that the model can reliably identify the resale value of devices based on their nearest neighbors in the feature space, making it a valuable tool for stakeholders in the used device market.
 •	K = 21 yields the highest accuracy signifies that considering the 21 nearest neighbors provides the best balance for making accurate predictions. These 21 neighbours are alike profiles to the newly introduced data. The businesses can decide the price of given used phone by comparing its profile to the 21 neighbour’s profile. This not only streamlines the valuation process but also ensures consistency and reliability in the pricing strategy, fostering customer trust and potentially increasing the efficiency of the sales process.
 •	The choice of K = 7, and the observation that it is odd helps to avoid ties. KNN’s performance suggests a well-tuned model that neither overfits nor underfits the data. A larger K value helps to reduce variance by considering more neighbors, thereby smoothing out predictions. At the same time, choosing an odd number for K helps mitigate potential decision-making ambiguities, further enhancing model reliability.
+
 CONCLUSION:
 •	Knowing the attributes that contribute to high/low selling price of refurbished devices will keep the seller informed about the choice of models that will boom in the market of sales of refurbished devices.
 •	Multiple regression model aids in determining the relationship between various attributes and the normalized new price. 
